@@ -1,0 +1,36 @@
+.logo{
+    height: 80px;
+    width: auto;
+}
+.delanteDelCarrusel{
+    z-index: initial;
+    position: absolute;
+    left: 55%;
+    right: 10%;
+    top: 70%;
+    z-index: 1;
+    color: aliceblue;
+    font-size: large;
+}
+
+.oradorCentrado{
+    display: flex;
+    justify-content: center;
+}
+.subrayado{
+    border-bottom: 1px dotted #000;
+  }
+footer{
+    background: rgb(28,57,71);
+    height: 100px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer > a {
+    text-decoration: none;
+    text-align: center;
+    width: 90px;
+    
+}
