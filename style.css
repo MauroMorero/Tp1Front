@@ -1,6 +1,4 @@
-body{
-    max-width: 100%;
-}
+
 .logo{
     height: 80px;
     width: auto;
@@ -15,18 +13,25 @@ body{
     color: aliceblue;
     font-size: large;
 }
+
 .hawai{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
 }
 .oradorCentrado{
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding: 0 5% 0 5%;
 }
-
-.oradorCentrado > p{
-    padding: 2%;
+.input{
+    display: flex;
+    flex-direction: row;
+    max-width: 44%;
+    margin: auto;
+    
+}
+.input > input{
+    margin: 10px;
 }
 .riff{
     display: flex;
@@ -35,9 +40,26 @@ body{
     margin: auto;
     margin-top: 20px;
 }
+.alinear{
+    display: flex;
+    flex-direction: column;
+    max-width: 42.5%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.enviar{
+    display: flex;
+    justify-content: center;
+}
+.enviar > button{
+    padding: 0 20% 0 20% !important;
+}
+
 footer{
     background: rgb(28,57,71);
-    height: 100px;
+    padding: 10px 0 10px 0;
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -64,14 +86,16 @@ footer > a {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+    }
+    .serOrador{
+        color: #000 !important;
+        border-color: #000 !important;
     }
     .hawai{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
     .logoCentrado{
         display: flex;
         flex-direction: row;
@@ -81,21 +105,22 @@ footer > a {
         display: flex!important;
         flex-direction: column;
     }
-    footer{
+    .input{
+        flex-direction:column;
+        max-width: 80%;
+        align-items: center;
+    }
+    .riff{
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    .enviar > button{
+        padding: 0 35% 0 35% !important;
+    }
+     footer{
         text-decoration: none;
         text-align: center;
         display: flex;
         flex-wrap: wrap;
     }
-    .input{
-        display: flex;
-        flex-direction: column;
-        width: 80%!important;
-        
-    }
-    .riff{
-        max-width: 80%;
-    }
-    
-    
 }
