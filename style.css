@@ -15,25 +15,87 @@ body{
     color: aliceblue;
     font-size: large;
 }
-
+.hawai{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
 .oradorCentrado{
     display: flex;
     justify-content: center;
 }
-.subrayado{
-    border-bottom: 1px dotted #000;
-  }
+
+.oradorCentrado > p{
+    padding: 2%;
+}
+.riff{
+    display: flex;
+    flex-direction: column;
+    max-width: 42.5%;
+    margin: auto;
+    margin-top: 20px;
+}
 footer{
     background: rgb(28,57,71);
     height: 100px;
     margin-top: 25px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 footer > a {
     text-decoration: none;
     text-align: center;
     width: 90px;
+    margin:  0 1% 0 1%;
+    
+}
+@media only screen and (max-width: 768px) {
+    .delanteDelCarrusel{
+        background-color: rgb(212, 243, 232);
+        position: relative;
+        width: 100%;
+        left:0;
+        right: 0;
+        padding: 5%;
+        color: #000;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .hawai{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logoCentrado{
+        display: flex;
+        flex-direction: row;
+        justify-content: center!important;
+    }
+    .navCentrado{
+        display: flex!important;
+        flex-direction: column;
+    }
+    footer{
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        width: 80%!important;
+        
+    }
+    .riff{
+        max-width: 80%;
+    }
+    
     
 }
